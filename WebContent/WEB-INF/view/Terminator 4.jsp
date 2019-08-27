@@ -11,12 +11,13 @@ Terminator 4 Movie Timings
 
 <hr>
 
-<form:form name = "myform" action = "{Selection}" modelAttribute = "MovieListings" >
+<!-- HAVE TO USE ${name} else the Controller will not be able to get the name -->
+<form:form name = "myform" action = "${name}/PickTimeSlot" modelAttribute = "Movie" >
 <!--  provides link to showForm -->>
 Available Movie Timings :
 
 
-<form:radiobuttons path="Selection" items="${MovieListings.movieListing.get('Terminator 4').getTimeSlots().keySet()}" />
+<form:radiobuttons path="Selection" items="${Movie.getTimeSlots().keySet()}" />
 
 
 

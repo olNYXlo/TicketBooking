@@ -1,3 +1,4 @@
+<%@ taglib prefix ="form" uri = "http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <body>
@@ -10,14 +11,23 @@ Golden Village Cinemas
 
 <!--  provides link to showForm -->>
 
-<a href = "Terminator/"> Movie Timings For Terminator</a>
+<form:form name = "myform" action = "pickMovie" modelAttribute = "MovieListings" >
+<!--  provides link to showForm -->>
+Available Movies :
 
+
+<form:radiobuttons path="Selection" items="${MovieListings.movieListing.keySet()}" />
+
+
+
+<input type ="submit" />
+</form:form>
+<a href = "/Reply"> Response Body create object</a>
 <br><br>
-<a href = "Terminator2/"> Movie Timings For Terminator 2</a>
+<a href = "/Response"> Response Body</a>
 <br><br>
-<a href = "Terminator3/"> Movie Timings For Terminator 3</a>
+<a href = "/Request"> Request Body</a>
 <br><br>
-<a href = "Terminator4/"> Movie Timings For Terminator 4</a>
 </body>
 
 

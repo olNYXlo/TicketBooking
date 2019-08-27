@@ -80,7 +80,8 @@ public class MovieListings {
 	public static void main (String args[]) {
 		MovieListings m1 = new MovieListings();
 		System.out.println(m1.movieListing.keySet());
-		m1.movieListing.get("Terminator");
+		System.out.println(m1.movieListing.get("Terminator").getName());
+		
 		
 	}
 

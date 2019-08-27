@@ -7,6 +7,9 @@ public class Movie {
 	// Movie has multiple Screening Times & its respective available seats
 
 	private String name;
+	private String Selection;
+	//String selection is useless. 
+	// only have it to enable the radiobutton function
 	private LinkedHashMap<String,MovieSeats> TimeSlots = new LinkedHashMap<String,MovieSeats>();
 	
 	public String getName() {
@@ -25,6 +28,13 @@ public class Movie {
 	public Movie(String MovName) {
 		name = MovName;
 	}
+	public String getSelection() {
+		return Selection;
+	}
+	public void setSelection(String selection) {
+		Selection = selection;
+	}
+	
 	
 		
 	
