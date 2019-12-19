@@ -1,6 +1,7 @@
 package pojo;
 
 import java.util.LinkedHashMap;
+import java.util.Map.Entry;
 
 public class MovieListings {
 	
@@ -81,7 +82,6 @@ public class MovieListings {
 		MovieListings m1 = new MovieListings();
 		System.out.println(m1.movieListing.keySet());
 		System.out.println(m1.movieListing.get("Terminator").getName());
-		
 		
 	}
 

@@ -58,6 +58,7 @@ public class MovieSeats {
 		seats.put("A4", 0);
 		seats.put("A5", 0);
 		
+		
 		seats.put("B1", 0);
 		seats.put("B2", 1);
 		seats.put("B3", 0);
